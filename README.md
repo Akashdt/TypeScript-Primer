@@ -20,3 +20,24 @@ function add(a, b) {
 
 TypeScript adds optional static typing and language features such as classes and modules. It’s important to know that all these advanced features add zero cost to JavaScript. A typeScript is purely a compile-time tool. Once you compile, you are left with plain, idiomatic JavaScript. TypeScript is a language for application scale JavaScript development.
 
+VARIABLES IN TYPESCRIPT: 
+
+var: Declares a function-scoped or global variable. You can optionally set its value during the declaration. Its behavior and scoping rules are similar to the var keyword in JavaScript. For example,
+
+var foo = "bar";
+let: Declares a block-scoped local variable. Similar to var, you can optionally set the value of a variable during the declaration. For example,
+
+let a = 5;
+
+if (true) {
+  let a = 10;
+  console.log(a);  // 10
+}
+console.log(a);  // 5
+const: Declares a block-scoped constant value that cannot be changed after it’s initialized.  For example,
+
+const a = 5;
+
+if (true) {
+  a = 10; // Error: Cannot assign to 'a' because it is a constant.(2588)
+} 
